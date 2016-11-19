@@ -1,0 +1,14 @@
+{
+  "name": "Battleship API",
+  "version": "1.0.0",
+  "description": "Battleship API REST",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atomicposts/battleship-apit"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "body-parser": "^1.15.2"
+  }
+}
