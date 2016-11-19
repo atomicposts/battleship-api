@@ -1,11 +1,15 @@
 {
-  "name": "Battleship API",
+  "name": "BattleshipAPI",
   "version": "1.0.0",
   "description": "Battleship API REST",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atomicposts/battleship-apit"
+    "url": "https://github.com/atomicposts/battleship-api"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.14.0",
