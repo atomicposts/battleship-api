@@ -22,9 +22,15 @@ var matrix = function ( rows, cols, defaultValue){
     return arr;
 }
 
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 // API REST
-app.get('/board/:rows/:columns', function (req, res) {
-    res.json(matrix(req.params.rows, req.params.columns, {'state': 0}))
+app.get('/board/rows/:rows/columns/:columns', function (req, res) {
+    res.json(matrix(req.params.rows, req.params.columns,  0))
 })
 
 app.listen(3000, function () {
